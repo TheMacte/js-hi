@@ -7,7 +7,7 @@ const goods = [
 
 // 2. Добавьте значения по умолчанию для аргументов функции.
 // Как можно упростить или сократить запись функций? - удалить return
-const renderGoodsItem = (title='', price=0) => `<div class="goods-item"><h3>${title}</h3><p>${price}</p></div>`;
+const renderGoodsItem = (title='', price=0) => `<div class="goods-item"><div class="img-item"></div><h3>${title}</h3><button class="btn-price" data-price=${price}>Добавить</button></div>`;
 
 /*3. *Сейчас после каждого товара на странице выводится запятая. Из-за чего это происходит?
 map - возвращает массив разделённый запятыми.
